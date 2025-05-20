@@ -10,7 +10,7 @@ class Vertex:
         self.adjacent[neighbor] = weight
 
     def get_connections(self):
-        return self.adjacent.keys()  
+        return self.adjacent.keys()
 
     def get_id(self):
         return self.id
@@ -54,22 +54,146 @@ if __name__ == '__main__':
 
     g = Graph()
 
-    g.add_vertex('a')
-    g.add_vertex('b')
-    g.add_vertex('c')
-    g.add_vertex('d')
-    g.add_vertex('e')
-    g.add_vertex('f')
+    #floor 0 (basement)
+    g.add_vertex('A0')
+    g.add_vertex('B0')
+    g.add_vertex('C0')
+    g.add_vertex('D0')
+    g.add_vertex('E0')
+    g.add_vertex('F0')
 
-    g.add_edge('a', 'b', 7)  
-    g.add_edge('a', 'c', 9)
-    g.add_edge('a', 'f', 14)
-    g.add_edge('b', 'c', 10)
-    g.add_edge('b', 'd', 15)
-    g.add_edge('c', 'd', 11)
-    g.add_edge('c', 'f', 2)
-    g.add_edge('d', 'e', 6)
-    g.add_edge('e', 'f', 9)
+    #floor 0 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 1
+    g.add_vertex('A1')
+    g.add_vertex('B1')
+    g.add_vertex('C1')
+    g.add_vertex('D1')
+    g.add_vertex('E1')
+    g.add_vertex('F1')
+
+    #floor 1 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 2
+    g.add_vertex('A2')
+    g.add_vertex('B2')
+    g.add_vertex('C2')
+    g.add_vertex('D2')
+    g.add_vertex('E2')
+    g.add_vertex('F2')
+
+    #floor 2 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 3
+    g.add_vertex('A3')
+    g.add_vertex('B3')
+    g.add_vertex('C3')
+    g.add_vertex('D3')
+    g.add_vertex('E3')
+    g.add_vertex('F3')
+
+    #floor 3 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 4
+    g.add_vertex('A4')
+    g.add_vertex('B4')
+    g.add_vertex('C4')
+    g.add_vertex('D4')
+    g.add_vertex('E4')
+    g.add_vertex('F4')
+
+    #floor 4 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 5
+    g.add_vertex('A5')
+    g.add_vertex('B5')
+    g.add_vertex('C5')
+    g.add_vertex('D5')
+    g.add_vertex('E5')
+    g.add_vertex('F5')
+
+    #floor 5 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 6
+    g.add_vertex('A6')
+    g.add_vertex('B6')
+    g.add_vertex('C6')
+    g.add_vertex('D6')
+    g.add_vertex('E6')
+    g.add_vertex('F6')
+
+    #floor 6 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 7
+    g.add_vertex('A7')
+    g.add_vertex('B7')
+    g.add_vertex('C7')
+    g.add_vertex('D7')
+    g.add_vertex('E7')
+    g.add_vertex('F7')
+
+    #floor 7 connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
+    #floor 8 (to be added with 9th floor chorus room)
+
+
+
+    #floor  connections
+    g.add_edge('B', 'C', 0)
+    g.add_edge('C', 'D', 0)
+    g.add_edge('D', 'E', 0)
+    g.add_edge('E', 'F', 0)
+    g.add_edge('F', 'A', 0)
+    g.add_edge('A', 'B', 0)
+
 
     for v in g:
         for w in v.get_connections():
@@ -84,7 +208,7 @@ if __name__ == '__main__':
 
 
 
-
+'''
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -108,9 +232,10 @@ black_edges = [edge for edge in G.edges() if edge not in red_edges]
 # Need to create a layout when doing
 # separate calls to draw nodes and edges
 pos = nx.spring_layout(G)
-nx.draw_networkx_nodes(G, pos, cmap=plt.get_cmap('jet'), 
+nx.draw_networkx_nodes(G, pos, cmap=plt.get_cmap('jet'),
                        node_color = values, node_size = 500)
 nx.draw_networkx_labels(G, pos)
 nx.draw_networkx_edges(G, pos, edgelist=red_edges, edge_color='r', arrows=True)
 nx.draw_networkx_edges(G, pos, edgelist=black_edges, arrows=False)
 plt.show()
+'''
