@@ -50,6 +50,10 @@ class Graph:
     def get_vertices(self):
         return self.vert_dict.keys()
 
+def shortest_distance(start, end):
+    if 
+    node1 =+ start[0:1]
+
 if __name__ == '__main__':
 
 # School mapped out with nodes
