@@ -50,10 +50,23 @@ class Graph:
     def get_vertices(self):
         return self.vert_dict.keys()
 
+
 def shortest_distance(start, end):
-    if 
-    
-    node1 =+ start[0:1]
+    check = True
+    shortest = None
+
+    # checks both nodes r in valid format
+    if start[1:2] != "A" and start[1:2] != "B" and start[1:2] != "C" and start[1:2] != "D" and start[1:2] != "E" and start[1:2] != "F" and start[0:1] >= 0 and start[0:1] <= 7 and start[0:1]%1 == 0 and start[2:4] >= 1 and start[2:4] <= 26 and start[2:4]%1 == 0:
+        print("Invalid start node. Please enter a valid node (0-7)(A-F)(1-26).")
+        check = False
+    if end[1:2] != "A" and end[1:2] != "B" and end[1:2] != "C" and end[1:2] != "D" and end[1:2] != "E" and end[1:2] != "F"  and end[0:1] >= 0 and end[0:1] <= 7 and end[0:1]%1 == 0 and end[2:4] >= 1 and end[2:4] <= 26 and end[2:4]%1 == 0:
+        print("Invalid ending node. Please enter a valid node (0-7)(A-F)(1-26).")
+        check = False
+    if check == False:
+        return None
+
+    while
+
 
 if __name__ == '__main__':
 
