@@ -1,0 +1,216 @@
+{
+  "nodes": [
+    {
+      "name": "A0",
+      "group": 1
+    },
+    {
+      "name": "B0",
+      "group": 1
+    },
+    {
+      "name": "C0",
+      "group": 1
+    },
+    {
+      "name": "D0",
+      "group": 1
+    },
+    {
+      "name": "E0",
+      "group": 1
+    },
+    {
+      "name": "F0",
+      "group": 1
+    },
+    {
+      "name": "A1",
+      "group": 2
+    },
+    {
+      "name": "B1",
+      "group": 2
+    },
+    {
+      "name": "C1",
+      "group": 2
+    },
+    {
+      "name": "D1",
+      "group": 2
+    },
+    {
+      "name": "E1",
+      "group": 2
+    },
+    {
+      "name": "F1",
+      "group": 2
+    },
+    {
+      "name": "A2",
+      "group": 3
+    },
+    {
+      "name": "B2",
+      "group": 3
+    },
+    {
+      "name": "C2",
+      "group": 3
+    },
+    {
+      "name": "D2",
+      "group": 3
+    },
+    {
+      "name": "E2",
+      "group": 3
+    },
+    {
+      "name": "F2",
+      "group": 3
+    },
+    {
+      "name": "A3",
+      "group": 4
+    },
+    {
+      "name": "B3",
+      "group": 4
+    },
+    {
+      "name": "C3",
+      "group": 4
+    },
+    {
+      "name": "D3",
+      "group": 4
+    },
+    {
+      "name": "E3",
+      "group": 4
+    },
+    {
+      "name": "F3",
+      "group": 4
+    },
+    {
+      "name": "A4",
+      "group": 5
+    },
+    {
+      "name": "B4",
+      "group": 5
+    },
+    {
+      "name": "C4",
+      "group": 5
+    },
+    {
+      "name": "D4",
+      "group": 5
+    },
+    {
+      "name": "E4",
+      "group": 5
+    },
+    {
+      "name": "F4",
+      "group": 5
+    },
+    {
+      "name": "A5",
+      "group": 6
+    },
+    {
+      "name": "B5",
+      "group": 6
+    },
+    {
+      "name": "C5",
+      "group": 6
+    },
+    {
+      "name": "D5",
+      "group": 6
+    },
+    {
+      "name": "E5",
+      "group": 6
+    },
+    {
+      "name": "F5",
+      "group": 6
+    },
+    {
+      "name": "A6",
+      "group": 7
+    },
+    {
+      "name": "B6",
+      "group": 7
+    },
+    {
+      "name": "C6",
+      "group": 7
+    },
+    {
+      "name": "D6",
+      "group": 7
+    },
+    {
+      "name": "E6",
+      "group": 7
+    },
+    {
+      "name": "F6",
+      "group": 7
+    },
+    {
+      "name": "A7",
+      "group": 8
+    },
+    {
+      "name": "B7",
+      "group": 8
+    },
+    {
+      "name": "C7",
+      "group": 8
+    },
+    {
+      "name": "D7",
+      "group": 8
+    },
+    {
+      "name": "E7",
+      "group": 8
+    },
+    {
+      "name": "F7",
+      "group": 8
+    },
+    {
+      "name": "C8",
+      "group": 9
+    },
+    {
+      "name": "F8",
+      "group": 9
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 0,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "value": 8
+    }
+  ]
+}
