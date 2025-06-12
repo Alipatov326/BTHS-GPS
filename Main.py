@@ -4,7 +4,8 @@ from tkinter import ttk
 
 
 
-
+# graph structure classes used for creating node map of the school
+# functions and documentation found on geeksforgeeks.org
 class Vertex:
     def __init__(self, node):
         self.id = node
@@ -58,8 +59,7 @@ class Graph:
     def get_vertices(self):
         return self.vert_dict.keys()
 
-
-
+# uses dijkstra's algorithm to find the shortest path between two nodes in the graph
 def shortest_distance(graph, start, end):
     # Check if start and end nodes exist
     if start not in graph.vert_dict or end not in graph.vert_dict:
@@ -97,7 +97,7 @@ def shortest_distance(graph, start, end):
         return None
     return distances[end], path
 
-
+# converts the path found by dijkstra's algorithm into human readable instructions
 def path_to_instructions(path):
     import re
     if not path or len(path) < 2:
@@ -153,6 +153,7 @@ def path_to_instructions(path):
                 instructions.append(f"Then, {step}")
     return "\n".join(instructions)
 
+# function to find the path based on user input
 def find_path():
     start = f"{start_dir.get()}{start_floor.get()}"
     end = f"{end_dir.get()}{end_floor.get()}"
@@ -166,6 +167,7 @@ def find_path():
             text=f"Shortest distance: {distance}\nInstructions:\n{instructions}"
         )
 
+# main function to create the graph and edges of the school
 if __name__ == "__main__":
 
     g = Graph()
@@ -381,7 +383,7 @@ if __name__ == "__main__":
 
 
 
-
+# using tkinter to create a UI
 root = tk.Tk()
 root.title("Path Finder")
 root.minsize(350, 260)
